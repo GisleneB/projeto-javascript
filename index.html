@@ -1,0 +1,26 @@
+<script>
+   const livros = ["Harry Potter", "Diário de um banana"]
+    
+    livros.push("Ágape")
+
+ const   livrosNãoDiáodeumbanana = livros.filter(livros => {
+        return livros !== "Diário de um banana"
+    })
+
+    const livrosHarryPotter = livros.find(function(livros){
+        return livros !== "Harry Potter"
+    })
+
+    const found = livros.includes("Ágape", 1)
+
+    const novoslivros = [...livros, "Ética"]
+     
+    const livrosAtualizados = novoslivros.slice(-2)
+    livros.pop
+    console.log(livros)
+    
+
+</script>
+
+
+

@@ -1,0 +1,10 @@
+<script>
+   const mapFn = (_, numberOfMonth) => {
+     const date = new Date(0, numberOfMonth)
+
+   return date.toLocaleString('pt-BR', { month: 'long'})
+}
+   const result = Array.from({length: 12}, mapFn)
+
+   console.log(result)
+</script>

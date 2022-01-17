@@ -1,0 +1,11 @@
+<script>
+    const mapFn = (_, weekDayNumbers) => {
+       const date = new Date(0, 0, weekDayNumbers); 
+       return date.toLocaleString('pt-BR', { weekday: 'narrow' });
+    }
+
+    const result = Array.from({ length: 7}, mapFn)
+    console.log(result)
+
+
+</script>

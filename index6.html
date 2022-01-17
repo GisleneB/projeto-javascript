@@ -1,0 +1,19 @@
+<script>
+    function range(start, stop){
+   stop = stop === undefined ? start : stop
+   start = stop === start ? 1 : start 
+
+   let length = stop - start + 1
+
+const mapFn = (_, index) => start + index
+
+const result = Array.from({ length }, mapFn)
+
+console.log(result)
+
+return result
+}
+
+const result = range(65, 90). map(n => String.fromCharCode(n))
+console.log(result)
+</script>

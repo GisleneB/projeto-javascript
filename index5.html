@@ -1,0 +1,17 @@
+<script>
+   function range(start, stop){
+   stop = stop === undefined ? start : stop
+   start = stop === start ? 1 : start 
+
+   let length = stop - start + 1
+
+const mapFn = (_, index) => start + index
+
+const result = Array.from({ length }, mapFn)
+
+console.log(result)
+}
+
+range(4)
+range(3, 7)
+</script>
